@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="./js/main.js"></script> 
+    <script src="./js/GetDayInfo.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+            <a class="logo" href="">
+                <span>
+                    <img src="https://i2.wp.com/blog.zawislak.fr/wp-content/uploads/2017/04/React.png">
+                </span>
+        
+            </a>
+            <div class="nav-toggle"><span></span></div>
+            <ul id="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/page1.html">Калькулятор</a></li>
+            </ul>
+            </nav>
+        </header>
+            <div class="container">
+                <div class="posts-list">
+                <article id="post-1" class="post">
+                    <div class="post-image"><a href=""><img src="https://miro.medium.com/max/1024/1*X2hhWhT8LxskswFNZUsMFg.png"></a></div>
+                        <div class="post-content">
+                            <h2 class="post-title" id="s11">История</h2>
+                            <p>
+                                React был создан Джорданом Уолком, инженером-программистом в Facebook, который выпустил ранний прототип React под названием «FaxJS». На него повлияли XHP, HTML библиотека компонентов для PHP. Впервые он был размещен на Facebook Новостная лента в 2011 году и позже Instagram в 2012. Его исходный код был открыт в JSConf US в мае 2013 года.
+                            </p>
+                            <p>
+                                React Native, что позволяет Android, iOS, и UWP о разработке с помощью React было объявлено на конференции Facebook React Conf в феврале 2015 года, а исходный код был открыт в марте 2015 года.
+                            </p>
+                            <p>                              
+                                18 апреля 2017 года Facebook объявил React Fiber, новый основной алгоритм библиотеки React для сборки пользовательские интерфейсы. React Fiber должен был стать основой для любых будущих улучшений и развития функций библиотеки React.[нуждается в обновлении]
+                            </p>
+                            <p>                              
+                                26 сентября 2017 года React 16.0 был выпущен для широкой публики.
+                            </p>
+                            <p>                                                               
+                                16 февраля 2019 года React 16.8 был выпущен для широкой публики. Релиз представил React Hooks.
+                            </p>
+                            <p>                                   
+                                10 августа 2020 года команда React объявила о первом выпуске-кандидате для React v17.0, известном как первый крупный выпуск без серьезных изменений в API React для разработчиков.
+                            </p>
+
+                            <div class="post-footer">
+                        </div>
+                    </div>
+                </article>
+                <article id="post-2" class="post">
+                    <div class="post-content">
+                        <h2 class="post-title" id="s22">Что такое React?</h2>
+                        <p>
+                            React это JavaScript библиотека, созданная Facebook.
+                        </p>
+                        <p>
+                            React это инструмент для создания компонентов пользовательского интерфейса.
+                        </p>
+                        <h2 class="post-title">Как работает React?</h2>
+                        <p>                              
+                            React создает виртуальный DOM в памяти.
+                        </p>
+                        <p>                              
+                            Вместо того чтобы непосредственно манипулировать DOM браузера, React создает виртуальный DOM в памяти, где он выполняет все необходимые манипуляции, прежде чем вносить изменения в DOM браузера.
+                        </p>
+                        <p>                                                               
+                            Реагирует только на изменения, которые должны быть изменены!
+                        </p>
+                        <p>                                   
+                            React узнает, какие изменения были сделаны, и изменяет только то, что должно быть изменено.
+                        </p>
+                        <a href="https://www.schoolsw3.com/react/react_intro.php">Оригинал</a>
+                        <div class="post-footer">
+                    </div>
+                </article>
+                <article id="post-" class="post">
+                    <div class="post-content">
+                        <h2 class="post-title" id="s33">Пример использования</h2>
+                        <p>
+                            Ниже приведён пример использования React в HTML с JSX и JavaScript.
+                        </p>
+                        <p style="background-color: #f8f9fa;
+                        color: rgb(14, 75, 207);
+                        border: 1px solid #eaecf0;">
+                            <code >
+                                <br>
+                                &lt;div id="myReactApp"&gt;&lt;/div&gt;<br>
+                                <br>
+                                &lt;script type="text/babel"&gt;&lt;/script&gt;
+                                <br>
+                                &nbsp;&nbsp;class Greeter extends React.Component  &#123;
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;render() &#123;
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;&lt;h1&gt;&#123;this.props.greeting&#125;&lt;/h1&gt;
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&#125;
+                                <br>
+                                &nbsp;&nbsp;&#125;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;ReactDOM.render&#40;
+                                &lt;Greeter 
+                                greeting="Hello World!"&nbsp;/&gt;&sbquo;
+                                document.getElementById&#40;
+                                'myReactApp'&#41;&#41;
+                                <br>
+                                &lt;/script&gt;
+                        </code>          
+                        </p>
+                        <p>Класс Greeter — это React-компонент, принимающий свойство greeting. Метод ReactDOM.render отрисовывает экземпляр класса (компонента) Greeter со свойством greeting равным "Hello World" и вставляет отрисованный компонент в DOM-элемент с идентификатором myReactApp как вложенный элемент.</p>
+                        <p style="background-color: #f8f9fa;
+                        color: rgb(14, 75, 207);
+                        border: 1px solid #eaecf0;">                              
+                            <code>
+                                <br>
+                                &lt;div id="myReactApp"&gt;
+                                <br>
+                                &nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;
+                                <br>
+                                &lt;/div&gt;
+                            </code>
+                        </p>
+                        <br>
+                        <a href="https://ru.wikipedia.org/wiki/React">Оригинал</a>
+                        <div class="post-footer">
+                    </div>
+                </article>
+                <article id="post-2" class="post">
+                    <div class="post-content">
+                        <h2 class="post-title" id="s44">Однонаправленная передача данных</h2>
+                        <p>
+                            Свойства передаются от родительских компонентов к дочерним. Компоненты получают свойства как множество неизменяемых (англ. immutable) значений, поэтому компонент не может напрямую изменять свойства, но может вызывать изменения через callback-функции. Такой механизм называют «свойства вниз, события наверх».
+                        </p>
+                        <h2 class="post-title" >Виртуальный DOM</h3>
+                        <p>
+                            React использует виртуальный DOM (англ. virtual DOM). React создаёт кэш-структуру в памяти, что позволяет вычислять разницу между предыдущим и текущим состояниями интерфейса для оптимального обновления DOM браузера. Таким образом программист может работать со страницей, считая, что она обновляется вся, но библиотека самостоятельно решает, какие компоненты страницы необходимо обновить.
+                        </p>
+                        <h2 class="post-title">JSX</h3>
+                        <p>
+                            JavaScript XML (JSX) — это расширение синтаксиса JavaScript, которое позволяет использовать HTML-подобный синтаксис для описания структуры интерфейса. Как правило, компоненты написаны с использованием JSX, но также есть возможность использования обычного JavaScript. JSX напоминает другой язык, созданный в компании Фейсбук для расширения PHP, XHP .
+                        </p>
+                        <h2 class="post-title">React Hooks</h3>
+                            <p>
+                                Хуки позволяют использовать состояние и другие возможности React без написания классов.
+
+                                Построение пользовательских хуков позволяет помещать логику компонента в повторно используемые функции.
+                            </p>
+                        <a href="https://ru.wikipedia.org/wiki/React">Оригинал</a>
+                        <div class="post-footer">
+                    </div>
+                </article>
+                </div>
+                
+                <aside>
+                    <div class="widget">
+                    <h3 class="widget-title">Содержание</h3>
+                    <ul class="widget-posts-list" id="menu_two">
+                        <li>
+                        <div class="post-image-small">
+                            <a href=""><img src="./img/book.svg"></a>
+                        </div>
+                        <a href="#s11" class="widget-post-title">История</a>
+                        </li>
+                        <li>
+                        <div class="post-image-small">
+                            <a href=""><img src="./img/book.svg"></a>
+                        </div>
+                        <a href="#s22" class="widget-post-title">Введение</a>
+                        </li>
+                        <li>
+                        <div class="post-image-small">
+                            <a href=""><img src="./img/book.svg"></a>
+                        </div>
+                        <a href="#s33" class="widget-post-title">Пример использования</a>
+                        </li>
+                        <li>
+                        <div class="post-image-small">
+                            <a href=""><img src="./img/book.svg"></a>
+                        </div>
+                        <a href="#s44" class="widget-post-title">Особенности</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget-title">Калькулятор</h3>
+                        <ul class="widget-category-list">
+                            <form name="week_day" method="POST">
+                                <table style="margin: 15px auto; border: 1px solid #4874a3;">
+                                <tr style="text-align: center; background-color: #E4E4E4;">
+                                 <td>День</td><td>Месяц</td><td>Год</td>
+                                </tr>
+                                <tr>
+                                 <td><input type="text" name="day" size=3 maxlength=2 value=6></td>
+                                 <td>
+                                  <select name="m">
+                                  <option>Января
+                                  <option>Февраля
+                                  <option>Марта
+                                  <option>Апреля
+                                  <option>Мая
+                                  <option>Июня
+                                  <option>Июля
+                                  <option>Августа
+                                  <option>Сентября
+                                  <option>Октября
+                                  <option>Ноября
+                                  <option>Декабря
+                                  </select>
+                                 </td>
+                                 <td><input type="text" name="year" size="5" maxlength="4" value="2021"></td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                 <td colspan="3">
+                                 <input type="submit" onclick="tellday(); return false; "value="Жми!">
+                                 </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                 <td colspan="3">
+                                 <input type="text" name="theday" size="30" maxlength="9">
+                                 </td>
+                                </tr>
+                                </table>
+                                </form>
+                        </ul>
+                        </div>
+                </aside>
+                </div>
+                
+                <footer>
+                    <div class="container">
+                    <div class="footer-col"><span>React</span></div>
+                    <div class="footer-col">
+                        <div class="social-bar-wrap">
+                            <a href="#" class="scroll_top">Наверх</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <a href="mailto:agasio15@yandex.ru  ">Почта</a>
+                    </div>
+                    </div>
+                </footer>
+                <script>
+                $('.nav-toggle').on('click', function(){
+                $('#menu').toggleClass('active');
+                });
+                </script>
+                
+    </body>
+</html>
